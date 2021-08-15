@@ -17,7 +17,7 @@ body {
     padding-bottom: 130px;
     padding-left: 20px;
     padding-right: 20px;
-
+    
     h1 {
         font-weight: 700;
         font-size: 40px;
@@ -144,6 +144,11 @@ body {
     }
 }
 
+hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .section-footer {
 
     padding-top: 80px;
@@ -164,32 +169,116 @@ body {
     
 }
 
-@media (max-width: 375px) {
+@media (max-width: 575.98px) { 
 
-    body {
-        margin: 0px;
-        padding: 0px;
-    }
+   .section-profile { 
 
-    .section-profile {
-    
-        margin-top: -80px;
-        text-align: center;
+       padding-top: 50px;
+       padding-bottom: 50px; 
 
-        #profile-headline {
-            font-size: 14px;
-            font-weight: 600;
-            color: #948282;
+       h1 {
+           font-size: 40px;
+           font-weight: 700;
+           text-align: center;
+       }
+
+       #profile-description {
+           width: 100%;
+           text-align: center;
+       }
+
+       img {
+           width: 200px;
+           height: 200px;
+           text-align: left;
+           margin-top: 20px;
+       }
+   }
+
+   .about-me {
+
+       p {
+           font-size: 12px;
+       }
+
+       ul {
+           li {
+               font-size: 12px;
+           }
+       }
+
+       .about-kanan {
+           padding-left: 30px;
+           padding-right: 30px;
+           padding-top: 20px;
+       }
+   }
+
+   .riwayat-project {
+       
+        .gambar-project {
+
+            margin: 0 auto;
+            text-align: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
-        p {
-            display: none;
+        .riwayat-konten {
+
+            margin-top: 60px;
+
+            .detail-project {
+                h2 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+
+                p {
+                  width: 95%;
+                }
+
+                #riwayat-tahun {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    font-size: 15px;
+                }
+
+                #riwayat-judul-dua {
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
         }
+   }
 
-        .profile-kanan {
-            margin-top: 20px;
-        }
+   hr {
+       width: 70%;
+       align-items: center;
+       text-align: center;
+       margin: 40px auto;
+   }
 
-    }
-}
+   .section-footer {
 
+       margin-top: 0; 
+       padding-top: 0;
+
+       img {
+           width: 30px;
+       }
+
+       p {
+           font-size: 12px;
+       }
+   }
+   
+
+ }

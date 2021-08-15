@@ -128,6 +128,11 @@ body {
   height: 90px;
 }
 
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .section-footer {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -146,25 +151,87 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 375px) {
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
+@media (max-width: 575.98px) {
   .section-profile {
-    margin-top: -80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section-profile h1 {
+    font-size: 40px;
+    font-weight: 700;
     text-align: center;
   }
-  .section-profile #profile-headline {
-    font-size: 14px;
-    font-weight: 600;
-    color: #948282;
+  .section-profile #profile-description {
+    width: 100%;
+    text-align: center;
   }
-  .section-profile p {
-    display: none;
-  }
-  .section-profile .profile-kanan {
+  .section-profile img {
+    width: 200px;
+    height: 200px;
+    text-align: left;
     margin-top: 20px;
+  }
+  .about-me p {
+    font-size: 12px;
+  }
+  .about-me ul li {
+    font-size: 12px;
+  }
+  .about-me .about-kanan {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+  .riwayat-project .gambar-project {
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .riwayat-project .gambar-project img {
+    width: 100%;
+    height: auto;
+  }
+  .riwayat-project .riwayat-konten {
+    margin-top: 60px;
+  }
+  .riwayat-project .riwayat-konten .detail-project h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+  .riwayat-project .riwayat-konten .detail-project p {
+    width: 95%;
+  }
+  .riwayat-project .riwayat-konten .detail-project #riwayat-tahun {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 15px;
+  }
+  .riwayat-project .riwayat-konten .detail-project #riwayat-judul-dua {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  hr {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 40px auto;
+  }
+  .section-footer {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .section-footer img {
+    width: 30px;
+  }
+  .section-footer p {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
