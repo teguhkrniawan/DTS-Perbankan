@@ -1,0 +1,46 @@
+body {
+    max-width: 1366;
+    max-height: 768;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.my-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.card-body {
+    h3 {
+        display: inline;
+    }
+
+    p {
+        display: inline;
+        font-size: 20px;
+    }
+}
+
+#text-to {
+    display: inline;
+}
+
+#angka-suhu {
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+}
+
+.section-ganti-background {
+    margin-top: -180px;
+
+    #change-background {
+        margin-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,50 @@
+body {
+  max-width: 1366;
+  max-height: 768;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.my-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.card-body h3 {
+  display: inline;
+}
+
+.card-body p {
+  display: inline;
+  font-size: 20px;
+}
+
+#text-to {
+  display: inline;
+}
+
+#angka-suhu {
+  display: block;
+  margin: 10px auto;
+  width: 30%;
+}
+
+.section-ganti-background {
+  margin-top: -180px;
+}
+
+.section-ganti-background #change-background {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
