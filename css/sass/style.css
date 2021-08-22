@@ -30,6 +30,10 @@ body {
   font-size: 20px;
 }
 
+.card-body #sama-dengan {
+  display: block;
+}
+
 #text-to {
   display: inline;
 }

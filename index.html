@@ -31,19 +31,19 @@
                             <p>WIB</p>
                         </div>
                         <h5>Temperature Coverter</h5>
-                        <select name="from" id="from">
+                        <select name="from" id="from" onchange="reset()">
                             <option value="cel">Celcius</option>
                             <option value="far">Farenheit</option>
                             <option value="rea">Reamur</option>
                         </select>
                         <p id="text-to">TO</p>
-                        <select name="to" id="to">
+                        <select name="to" id="to" onchange="reset()">
                             <option value="cel">Celcius</option>
                             <option value="far">Farenheit</option>
                             <option value="rea">Reamur</option>
                         </select>
-                        <input type="text" name="angka-suhu" id="angka-suhu" placeholder="Input angka suhu yang akan di konversi">
-                        <p>=</p>
+                        <input type="number" onkeyup="convertSuhu()" name="angka-suhu" id="angka-suhu" placeholder="Input angka suhu yang akan di konversi">
+                        <p id="sama-dengan">=</p>
                         <input type="text" name="hasil-converter" id="hasil-converter" placeholder="Hasilnya akan ada disini" disabled>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
   
             <div class="row section-ganti-background">
                 <input type="text" name="change-background" id="change-background" placeholder="#FFFFFF">
-                <button type="submit">Ganti Warna Background</button>
+                <button type="submit" onclick="changeBackground()">Ganti Warna Background</button>
             </div>
         </div>
     </section>
