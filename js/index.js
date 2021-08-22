@@ -1,3 +1,7 @@
+
+// import class suhu
+const suhu = new Suhu();
+
 // function generate tanggal
 function generateTanggal(){
 
@@ -36,54 +40,6 @@ function isEmpty(str) {
     return (!str || str.length === 0 );
 }
 
-// functin convert celcius to celcius
-function celciusToCelcius(suhu){
-    return suhu;
-}
-
-// function convert suhu celcius ke reamur
-function celciusToReamur(suhu){
-
-    const result = 4 * suhu / 5;
-    return result;
-
-}
-
-// function convert suhu celcius to farenheit
-function celciusToFarenheit(suhu){
-    const result = (1.8 * suhu) + 32
-    return result;
-    console.log("Celcius to farenheit : " +result)
-}
-
-// function convert suhu farenheit ke reamur
-function farenheitToReamur(suhu){
-    const hasil = 4 * (suhu-32) / 9;
-    return hasil;
-}
-
-// function convert suhu farenheit ke celcius
-function farenheitToCelcius(suhu){
-
-    const hasil = 5 * (suhu - 32) / 9;
-    return hasil;
-
-}
-
-// function convert suhu reamur ke celcius
-function reamurToCelecius(suhu){
-
-    const hasil = 5 * suhu / 4;
-    return hasil;
-}
-
-function reamurToFarenheit(suhu){
-
-    const hasil = (2.25 * suhu) + 32;
-    return hasil;
-    
-}
-
 // function eksekusi convert suhu
 function convertSuhu(){
 
@@ -106,7 +62,7 @@ function convertSuhu(){
             document.getElementById("hasil-converter").value = "";
         } 
  
-        const hasil = celciusToReamur(parseInt(angkaSuhu));
+        const hasil = suhu.celciusToReamur(parseInt(angkaSuhu));
         if(!isNaN(hasil)){
             document.getElementById("hasil-converter").value = hasil; 
         }
@@ -117,7 +73,7 @@ function convertSuhu(){
             document.getElementById("hasil-converter").value = "";
         }
 
-        const hasil = celciusToFarenheit(parseInt(angkaSuhu));
+        const hasil = suhu.celciusToFarenheit(parseInt(angkaSuhu));
         if(!isNaN(hasil)){
             document.getElementById("hasil-converter").value = hasil;
         }
@@ -128,7 +84,7 @@ function convertSuhu(){
             document.getElementById("hasil-converter").value = "";
         }
 
-        const hasil = farenheitToCelcius(parseInt(angkaSuhu));
+        const hasil = suhu.farenheitToCelcius(parseInt(angkaSuhu));
         if(!isNaN(hasil)){
             document.getElementById("hasil-converter").value = hasil;
         }
@@ -147,7 +103,7 @@ function convertSuhu(){
             document.getElementById("hasil-converter").value = "";
         }
 
-        const hasil = farenheitToReamur(parseInt(angkaSuhu));
+        const hasil = suhu.farenheitToReamur(parseInt(angkaSuhu));
         if(!isNaN(hasil)){
             document.getElementById("hasil-converter").value = hasil;
         }
@@ -158,7 +114,7 @@ function convertSuhu(){
             document.getElementById("hasil-converter").value = "";
         }
 
-        const hasil = reamurToCelecius(parseInt(angkaSuhu));
+        const hasil = suhu.reamurToCelecius(parseInt(angkaSuhu));
         if(!isNaN(hasil)){
             document.getElementById("hasil-converter").value = hasil;
         }
@@ -169,7 +125,7 @@ function convertSuhu(){
             document.getElementById("hasil-converter").value = "";
         }
 
-        const hasil = reamurToFarenheit(parseInt(angkaSuhu));
+        const hasil = suhu.reamurToFarenheit(parseInt(angkaSuhu));
         if(!isNaN(hasil)){
             document.getElementById("hasil-converter").value = hasil;
         }
@@ -183,8 +139,6 @@ function convertSuhu(){
         }
 
     }
-
-   
 }
 
 // function select box reset
@@ -199,8 +153,6 @@ function reset(){
     }
 
 }
-
-
 
 // function ganti background
 function changeBackground(){
